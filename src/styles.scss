@@ -1,0 +1,22 @@
+/* You can add global styles to this file, and also import other style files */
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    background-color: rgb(125, 125, 125);
+}
+
+::selection {
+    mix-blend-mode: difference;
+    // background: #ffb7b7; /* WebKit/Blink Browsers */
+    background: gray;
+  }
+  ::-moz-selection {
+    mix-blend-mode: difference;
+    background: gray;
+    // background: #ffb7b7; /* Gecko Browsers */
+  }
+
+  ::spelling-error {
+    color: rgb(0, 255, 0);
+  }

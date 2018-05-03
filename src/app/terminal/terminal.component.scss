@@ -1,8 +1,23 @@
 .terminal {
     background-color: rgb(125, 125, 125);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 
     .line {
         color: rgb(0, 255, 0)
+    }
+
+    .fill {
+        flex: 1;
+        display: flex;
+        flex-direction: column-reverse;
+
+        p {
+            margin: 5px;
+            color: rgb(0, 255, 0);
+            font-family: monospace;
+        }
     }
 
     .input-line {

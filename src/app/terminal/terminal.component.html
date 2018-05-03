@@ -1,5 +1,7 @@
-<div class="terminal">
-  <p *ngFor="let line of lines">{{line}}</p>
+<div class="terminal" (mousedown)="$event.preventDefault()">
+  <div class="fill">
+    <p *ngFor="let line of lines">{{line}}</p>
+  </div>
   <div class="input-line">
     <div class="carrot"></div>
     <input type="text" autofocus />
